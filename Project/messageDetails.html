@@ -1,0 +1,31 @@
+<div ng-controller="msgDetailsCtrl">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></button>
+			<img src="marlabs.png" style="width: 40px;height: 40px;">
+			</div>
+			<div class="collapse navbar-collapse" id="bs-nav-demo" style="font-size: 18px;">
+				<ul class="nav navbar-nav">
+					<li><a href="#/home">Home</a></li>
+					<li><a href="#/profile">Profile</a></li>
+					<li><a href="#/messages">Messages</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><button ng-click="logout()" class="trans" style="margin: 13px 20px;">Log Out</button></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<br>
+	<br><br>
+	<div class="row pro">
+		<div id="msgdtls">
+		{{content}}<br>	
+	</div>
+	</div>
+</div>

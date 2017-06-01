@@ -1,0 +1,12 @@
+<div ng-controller="loginCtrl" class="row" id="log2">
+<div class="col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-5 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-8 divCls">
+	<div id="login">
+	<p style="font-size: 20px;color: steelblue;font-weight: bold;">Log in to continue</p>
+	Username: <input type="text" ng-model="username" class="form-control"><br>
+	Password: <input type="password" ng-model="password" class="form-control"><br>
+	<button ng-click="authenticate()" class="btn btn-primary" style="width: 100px;text-align: center;"><b>Log In</b></button>
+	<button ng-click="signup()" class="btn btn-primary" style="width: 100px;text-align: center;"><b>Sign Up</b></button><br>
+	{{error}}
+	</div>	
+</div>
+</div>

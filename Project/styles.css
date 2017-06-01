@@ -1,0 +1,64 @@
+#view{
+	width: 80%;
+	margin: 20px auto;
+	height: 100%;
+}
+
+body{
+	background-color: #eeeeee;
+}
+
+#profile{
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 25px;
+	background-color: #dddddd;
+}
+
+#login{
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 25px;
+	background-color: #dddddd;
+	margin: 200px auto;
+}
+
+#log2{
+	background-image: url(https://www.belfercenter.org/sites/default/files/images/publication/feature/africa-15428_1920.jpg);
+	background-size: 100% 100%;
+}
+
+.pro{
+	background-image: url(http://wallpapercave.com/wp/f2nbsPJ.jpg);
+	background-size: 100% 100%;
+	font-size: 18px;
+	margin-bottom: 30px;
+	padding: 20px;
+}
+
+button.trans{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color: #bbbbbb;
+}
+
+button.trans:hover{
+	color: white;
+}
+
+#msgdtls{
+	width: 80%;
+	background-color: white;
+	margin: auto;
+	height: 400px;
+}
+
+footer{
+	clear: left;
+	font-size: 18px;
+	font-weight: bold;
+}

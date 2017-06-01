@@ -1,0 +1,44 @@
+<div ng-controller="profileCtrl">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+				<a href="#/home" class="navbar-brand"><img src="marlabs.png" style="width: 40px;height: 40px;margin-bottom: 5px;"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-nav-demo" style="font-size: 18px;">
+				<ul class="nav navbar-nav">
+					<li><a href="#/home">Home</a></li>
+					<li><a href="#/profile">Profile</a></li>
+					<li><a href="#/messages">Messages</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><button ng-click="logout()" class="trans" style="margin: 13px 20px;">Log Out</button></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- <a href="#/home">Home</a>
+	<a href="#/profile">Profile</a>
+	<a href="#/messages">Messages</a>
+	<button ng-click="logout()">Log Out</button><br><br> -->
+	<br><br><br>
+	<div class="row pro">
+	<div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-8 divCls" id="profile">
+		Name: <input type="text" ng-model="name" class="form-control"><br>
+		Username: <input type="text" ng-model="username" class="form-control"><br>
+		Password: <input type="text" ng-model="password" class="form-control"><br>
+		Location: <input type="text" ng-model="location" class="form-control"><br>
+		Email: <input type="text" ng-model="email" class="form-control"><br>
+		Phone: <input type="text" ng-model="phone" class="form-control"><br>
+		<button ng-click=changeDetails(name,username,password,location,email,phone) class="form-control btn btn-primary">Change</button>
+		<p id="promsg"></p>
+	</div>
+	</div>
+	
+	
+</div>

@@ -1,0 +1,59 @@
+<div ng-controller="messagesCtrl">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+				<a href="#/home" class="navbar-brand"><img src="marlabs.png" style="width: 40px;height: 40px;margin-bottom: 5px;"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-nav-demo" style="font-size: 18px;">
+				<ul class="nav navbar-nav">
+					<li><a href="#/home">Home</a></li>
+					<li><a href="#/profile">Profile</a></li>
+					<li><a href="#/messages">Messages</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><button ng-click="logout()" class="trans" style="margin: 13px 20px;">Log Out</button></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- <a href="#/home">Home</a>
+	<a href="#/profile">Profile</a>
+	<a href="#/messages">Messages</a>
+	<button ng-click="logout()">Log Out</button><br><br> -->
+	<br><br><br>
+	<div class="row pro">
+	<table class="table table-condensed" style="text-align: center;color: white;">
+		<tr>
+			<th style="text-align: center;">Sender</th>
+			<th style="text-align: center;">Subject</th>
+			<th style="text-align: center;">View</th>
+			<th style="text-align: center;">Delete</span></th>
+			<th style="text-align: center;">Important</th>
+		</tr>
+		<tr ng-repeat="message in msg track by $index">
+			<td>{{message.sender}}</td>
+			<td>{{message.subject}}</td>
+			<td><button ng-click="view($index)" class="trans"><span class="glyphicon glyphicon-file" style="color: violet;"></button></td>
+			<td><button ng-click="delete($index)" class="trans"><span class="glyphicon glyphicon-trash" style="color: red;"></button></td>
+			<td><input type="checkbox" ng-checked="{{message.checked}}" ng-click="important($index)"></td>
+		</tr>
+	</table>
+	<br><br>
+	<div class="row" id="msg">
+	<div class="col-md-offset-4 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-2 col-xs-8 divCls">
+		Send To: <input type="text" ng-model="receipient" placeholder="Username here..." class="form-control"><br>
+		Subject: <input type="text" ng-model="subject" placeholder="Enter subject here" class="form-control"><br>
+		Mark as Important: <input type="checkbox" ng-model="check"><br><br>
+		<textarea ng-model="content" placeholder="Your message here..." style="width:100%;height: 150px;"></textarea>
+		<button ng-click=sendMessage() class="btn btn-primary">Send Message</button>
+	</div>	
+	</div>
+	</div>
+	
+</div>

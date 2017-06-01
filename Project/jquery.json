@@ -1,0 +1,35 @@
+[
+  {
+    "name":"name1",
+    "username":"user1",
+    "password":"pass1",
+    "location":"loc1",
+    "phone":"phone1",
+    "email":"email1",
+    "messages":[{"sender":"user2", "subject":"subject3", "content":"content2", "checked":false},
+                {"sender":"user6", "subject":"subject1", "content":"content6", "checked":false},
+                {"sender":"user3", "subject":"subject5", "content":"contente7", "checked":false}]
+  },
+  {
+    "name":"name2",
+    "username":"user2",
+    "password":"pass2",
+    "location":"loc2",
+    "phone":"phone2",
+    "email":"email2",
+    "messages":[{"sender":"user3", "subject":"subject7", "content":"content6", "checked":false},
+                {"sender":"user7", "subject":"subject4", "content":"content2", "checked":false},
+                {"sender":"user1", "subject":"subject6", "content":"content8", "checked":false}]
+  },
+  {
+    "name":"name3",
+    "username":"user3",
+    "password":"pass3",
+    "location":"loc3",
+    "phone":"phone3",
+    "email":"email3",
+    "messages":[{"sender":"user5", "subject":"subject7", "content":"content7", "checked":false},
+                {"sender":"user7", "subject":"subject1", "content":"content2", "checked":false},
+                {"sender":"user6", "subject":"subject8", "content":"content0", "checked":false}]
+  }
+]
